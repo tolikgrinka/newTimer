@@ -1,0 +1,74 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+		<link media="all" rel="stylesheet" href="style.css" />
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$('a.left').hover(function () {
+					$('i.left').css('background', 'url("images/left.png") no-repeat center center');
+				}, function () {
+					$('i.left').css('background', 'transparent');
+				});
+
+				$('a.top').hover(function () {
+					$('i.top').css('background', 'url("images/top.png") no-repeat center center');
+				}, function () {
+					$('i.top').css('background', 'transparent');
+				});
+
+				$('a.right').hover(function () {
+					$('i.right').css('background', 'url("images/right.png") no-repeat center center');
+				}, function () {
+					$('i.right').css('background', 'transparent');
+				});
+
+				$('a.bottom').hover(function () {
+					$('i.bottom').css('background', 'url("images/bottom.png") no-repeat center center');
+				}, function () {
+					$('i.bottom').css('background', 'transparent');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="clock">
+			<img src="images/logo.png" alt="" id="logo">
+			<div class="blue-line">
+			  </div>
+			<div id="sec"></div>
+			<div id="hour"></div>
+			<div id="min"></div>
+			<div id="clock__center"></div>
+			<i class="top"><span>Інформаційні <br />досьє</span></i>
+			<i class="bottom"><span></span></i>
+			<i class="left"><span>Моніторинг <br />ЗМІ</span></i>
+			<i class="right"><span>Архіви</span></i>
+			<i class="bot"> <span id="bot">Метапошук</span> </i>
+			<a href="#" class="links top" data-i="top"></a>
+			<a href="#" class="links bottom" data-i="bottom"></a>
+			<a href="#" class="links left" data-i="left"></a>
+			<a href="#" class="links right" data-i="right"></a>
+			<div id="countdown">
+				<span id = "hour1"></span>
+				<p>:</p>
+				<span id="minute"></span>
+				<p>:</p>
+				<span id="second"></span>
+				<p>:</p>
+				<span id="millisecond"></span>
+			  </div>
+			  <div id="circle1"></div>
+			  <div id="circle2"></div>
+			  <div id="circle3"></div>
+			  <div id="circle4"></div>
+			  <div>
+				<img src="images/play.png" alt="" id="play">
+				<img src="images/stop.png" alt="" id="stop">
+			  </div>
+		</div>
+		<script src="js/test.js"></script>
+	</body>
+</html>
